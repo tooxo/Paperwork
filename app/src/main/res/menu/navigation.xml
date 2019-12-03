@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Image"
+        android:icon="@drawable/ic_photo_black_24dp"
+        android:id="@+id/navigation_item_a"
+        />
+    <item android:title="Text"
+        android:id="@+id/navigation_item_b"
+        android:icon="@drawable/ic_text_fields_black_24dp"/>
+    <item android:title="Item" />
+</menu>

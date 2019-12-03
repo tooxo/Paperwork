@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dial_view_plus_90"
+        android:title="@string/rotateright"
+        android:icon="@drawable/ic_rotate_right_black_10dp">
+    </item>
+    <item
+        android:id="@+id/dial_view_minus_90"
+        android:title="@string/rotateleft"
+        android:icon="@drawable/ic_rotate_left_black_10dp">
+    </item>
+    <item
+        android:id="@+id/dial_view_prev"
+        android:title="@string/prev"
+        android:icon="@drawable/ic_navigate_before_black_10dp">
+    </item>
+    <item
+        android:id="@+id/dial_view_next"
+        android:title="@string/next"
+        android:icon="@drawable/ic_navigate_next_black_10dp">
+    </item>
+</menu>

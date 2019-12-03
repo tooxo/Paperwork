@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tschulte.paperwork.MainActivity">
+    <item
+        android:id="@+id/action_rleft"
+        android:orderInCategory="100"
+        android:title="@string/rotateleft"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rright"
+        android:orderInCategory="200"
+        android:title="@string/rotateright"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/next"
+        android:orderInCategory="300"
+        android:title="next"
+        app:showAsAction="never"
+        />
+</menu>

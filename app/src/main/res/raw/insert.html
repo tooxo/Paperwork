@@ -1,0 +1,74 @@
+<style>
+    .hocrjs-toolbar {
+        height: 0 !important;
+        width: 0 !important;
+        display: none !important;
+    }
+    .ocrx_word {
+        background: white !important;
+        opacity: 1 !important;
+    }
+    .ocrx_word:hover {
+        opacity: 0 !important;
+    }
+    .hocr-viewer-container {
+        margin: 0 !important;
+    }
+
+</style>
+<script>
+    window.onload = function (e) {
+        let features = document.getElementsByClassName("features");
+
+        let fr = features[0].childNodes;
+        let hr = features[1].childNodes;
+
+        let f = [];
+        let h = [];
+
+        for (let t of fr) {
+            if (t.tagName !== "LI") {
+                continue
+            }
+            f.push(t);
+        }
+
+        for (let t of hr) {
+            if (t.tagName !== "LI") {
+                continue
+            }
+            h.push(t);
+        }
+
+
+        let f_c = [false, false, false, true, true, false, false, true, false];
+        let f_h = [false, false, false, true, false, false, false, false];
+
+        for (let x = 0; x < f_c.length; x++) {
+            let node = f[x];
+
+            if (f_c[x] === true) {
+                if (node.classList[0] === undefined) {
+                    node.click();
+                }
+            } else {
+                if (node.classList[0] !== undefined) {
+                    node.click();
+                }
+            }
+        }
+        for (let x = 0; x < f_h.length; x++) {
+            let node = h[x];
+            if (f_h[x]) {
+                if (node.classList[0] === undefined) {
+                    node.click();
+                }
+            } else {
+                if (node.classList[0] !== undefined) {
+                    node.click();
+                }
+            }
+        }
+    }
+
+</script>

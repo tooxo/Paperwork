@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Paperwork</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="choose">Choose Directory</string>
+    <string name="rotateleft">Rotate Left</string>
+    <string name="rotateright">Rotate Right</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="advancedsettings">Advanced Settings</string>
+    <string name="labels">Labels</string>
+    <string name="text">Text</string>
+
+    <string name="languages_ocr">OCR-Languages</string>
+    <string name="german_ocr">German</string>
+    <string name="english_ocr">English</string>
+
+    <string name="perms_grant">Grant Permissions</string>
+    <string name="choose_dir">Select Directory</string>
+
+    <string name="selection">Selection</string>
+    <string name="ocr">OCR</string>
+    <string name="done">Done</string>
+</resources>

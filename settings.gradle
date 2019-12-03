@@ -1,0 +1,8 @@
+include ':app'
+rootProject.name='Paperwork'
+
+sourceControl{
+    gitRepository("https://github.com/alexcohn/tess-two.git") {
+        producesModule("com.alexcohn:tesstwo")
+    }
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical">
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:id="@+id/tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_gravity="center_vertical"
+
+                android:padding="10dp"
+                app:container_enable_drag="false"
+                app:container_gravity="center"
+                app:horizontal_interval="10dp"
+                app:tag_clickable="true"
+                app:tag_enable_cross="true"
+                app:tag_selectable="true"
+                app:tag_theme="pure_teal"
+                app:vertical_interval="10dp"
+                app:container_background_color="#FFF"
+                app:container_border_color="#FFF"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="65"
+            android:hint="Tag-Name"
+            android:inputType="text">
+
+        </EditText>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/colorSelect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            app:cornerRadius="10dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_weight="20"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/masterConfirm"
+        android:layout_margin="5dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>
